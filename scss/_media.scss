@@ -1,0 +1,200 @@
+//phones
+@media (max-width: 500px) {
+	.container {
+		padding: 0 0.5rem;
+	}
+	.main-header {
+		.main-nav {
+			margin: 1rem 0;
+			img {
+				width: 20%;
+				height: 4vh;
+			}
+			ul {
+				margin: 0;
+				padding: 0;
+				a {
+					margin: 0 0.5rem;
+				}
+			}
+		}
+		// header content
+		.main-header-content {
+			flex-direction: column;
+			text-align: center;
+			.main-content {
+				order: 2;
+				h1 {
+					padding: 0 1rem;
+					margin-top: 2rem;
+					font-size: 1.5rem;
+				}
+				p {
+					padding: 0 0.5rem;
+					font-size: 0.9rem;
+				}
+				.form-group {
+					text-align: center;
+					input {
+						width: 90%;
+						margin-bottom: 1rem;
+						margin-right: 0;
+					}
+					button {
+						width: 95%;
+					}
+				}
+			}
+			.main-hero {
+				order: 1;
+			}
+		}
+	}
+	.main-section {
+		&:before {
+			top: -30px;
+		}
+		.section-content {
+			flex-direction: column;
+			.section-hero {
+				order: 1;
+				img {
+					width: 100%;
+					margin: 0;
+					margin-bottom: 4rem;
+				}
+			}
+			.main-content {
+				order: 2;
+				h1 {
+					text-align: center;
+					font-size: 1.1rem;
+				}
+				p {
+					text-align: left;
+					font-size: 0.9rem;
+					padding: 0.2rem 0.5rem;
+				}
+				a {
+					display: block;
+					text-align: center;
+					width: 50%;
+					margin: 0 auto !important;
+				}
+				.card {
+					margin: 4rem auto;
+					width: 85%;
+					padding: 0 0.5rem;
+					p {
+						padding: 0 0.5rem;
+						font-size: 0.9rem;
+					}
+					&-footer {
+						img {
+							margin-right: 0.5rem;
+						}
+					}
+				}
+			}
+		}
+	}
+	.call-to-action {
+		padding: 4rem 0;
+		.d-flex {
+			flex-direction: column;
+			.content-desc {
+				text-align: center;
+				h3 {
+					font-size: 1.5rem;
+				}
+				p {
+					padding: 0 0.9rem;
+				}
+			}
+			.sign-up {
+				margin: 0 auto;
+				input {
+					width: 100%;
+				}
+				button {
+					width: 105%;
+				}
+			}
+		}
+	}
+	.main-footer {
+		padding: 0.2rem 0.5rem;
+		.logo-white {
+			padding: 0 2.1rem;
+		}
+		.footer-content {
+			flex-direction: column;
+			.contact {
+				padding: 0 2.1rem;
+			}
+			.menu,
+			.social {
+				padding: 0;
+				margin-right: 0;
+			}
+			.social {
+				align-self: center;
+			}
+		}
+	}
+}
+//Landscape
+@media (max-height: 450px) {
+	// header
+	.main-header-content {
+		margin-top: 2rem;
+		.main-content {
+			flex: 1;
+			h1 {
+				font-size: 2rem;
+			}
+			p {
+				margin-bottom: 1rem;
+			}
+			.form-group {
+				input {
+					margin: 1rem 0;
+					margin-right: 0.5rem;
+					width: 40%;
+				}
+				button {
+					width: 40%;
+					padding: 1rem 1.5rem;
+				}
+			}
+		}
+		.main-hero {
+			flex: 1;
+		}
+	}
+	.main-section {
+		&:before {
+			top: -9%;
+		}
+		.description {
+			h1 {
+				font-size: 1.5rem;
+			}
+			p {
+				font-size: 0.9rem;
+			}
+		}
+	}
+	.sign-up {
+		button {
+			width: 84% !important;
+		}
+	}
+	.main-footer {
+		.footer-content {
+			.social {
+				margin-right: 0;
+			}
+		}
+	}
+}

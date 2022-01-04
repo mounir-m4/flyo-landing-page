@@ -1,0 +1,15 @@
+{
+	"name": "flyo-landing-page",
+	"version": "1.0.0",
+	"description": "![Design preview for the Fylo landing page with two column layout challenge](./design/desktop-preview.jpg)",
+	"main": "index.js",
+	"scripts": {
+		"sass": "node-sass -w scss/ -o dist/css/ --recursive"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"node-sass": "^7.0.1"
+	}
+}

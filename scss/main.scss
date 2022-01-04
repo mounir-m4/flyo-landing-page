@@ -1,0 +1,268 @@
+@import 'config';
+@import 'utilities';
+
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+	font-family: 'Open Sans', sans-serif;
+}
+h1,
+h2,
+h3 {
+	font-family: 'Raleway', sans-serif;
+}
+// header
+.main-header {
+	//navbar
+	.main-nav {
+		margin: 2rem 0;
+		justify-content: space-between;
+		img {
+			height: 50px;
+		}
+	}
+	//Header content
+	&-content {
+		justify-content: center;
+		vertical-align: middle;
+		align-items: center;
+		.main-cotent {
+			flex: 1;
+		}
+		p {
+			padding-right: 4rem;
+		}
+		.form-group {
+			position: relative;
+			padding-bottom: 1.5rem;
+		}
+		input {
+			padding: 0.8rem 0.5rem;
+			width: 45%;
+			margin-right: 1rem;
+			border: 0.5px solid $light-gray;
+			transition: all 0.2s;
+			border-radius: 5px;
+			&:focus {
+				outline: 0;
+				border: 1px solid $bright-blue;
+			}
+		}
+		small {
+			position: absolute;
+			bottom: 3%;
+			left: 0%;
+		}
+		// illustration
+		.main-hero img {
+			width: 100%;
+		}
+	}
+}
+.main-section {
+	position: relative;
+	background: $light-blue;
+	padding: 2rem 0;
+	z-index: 1;
+	&:before {
+		content: '';
+		position: absolute;
+		background: url('../images/bg-curve-desktop.svg');
+		background-position: top;
+		background-repeat: no-repeat;
+		background-size: 120%;
+		height: 100vh;
+		width: 100%;
+		top: -10%;
+		z-index: -1;
+	}
+
+	.main-content {
+		justify-content: space-between;
+		align-items: center;
+		vertical-align: middle;
+		.description {
+			flex-direction: column;
+			h1 {
+				font-size: 2rem;
+				margin-bottom: 1rem;
+			}
+			.main-link {
+				margin: 0.5rem 0;
+				color: $moderate-cyan;
+				font-size: 1rem;
+				border-bottom: 1px solid $moderate-cyan;
+				padding-bottom: 3px;
+				cursor: pointer;
+				&:hover {
+					color: hsl(170, 71%, 50%);
+					border-bottom: 1px solid hsl(170, 71%, 50%);
+				}
+			}
+		}
+		.align-content {
+			padding: 1rem 0.2rem;
+		}
+		.card {
+			margin: 3rem 0;
+			box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+			width: 55%;
+			padding: 1rem;
+			background-color: #fff;
+			border-radius: 10px;
+			color: $very-dark-blue;
+			&-body {
+				p {
+					margin: 0.5rem 0;
+					font-size: 0.9rem;
+					letter-spacing: 0.2px;
+				}
+				img {
+					height: 20px;
+					width: 20px;
+				}
+			}
+			&-footer {
+				align-items: center;
+				img {
+					border-radius: 50%;
+					width: 50px;
+					height: 50px;
+					margin-right: 1rem;
+				}
+				.footer-content {
+					flex-direction: column;
+					p {
+						margin: 0.2rem 0;
+						letter-spacing: 0.5px;
+						font-size: 0.8rem;
+						font-weight: bold;
+					}
+					small {
+						margin: 0;
+						font-size: 0.6rem;
+					}
+				}
+			}
+		}
+	}
+	.section-hero {
+		text-align: center;
+		img {
+			width: 90%;
+			margin-left: 4rem;
+		}
+	}
+}
+//call to action section
+.call-to-action {
+	background: $desaturated-blue;
+	padding: 6rem 0;
+	.d-flex {
+		align-items: center;
+		vertical-align: middle;
+		.content-desc {
+			flex: 1;
+			h3 {
+				letter-spacing: 0.8px;
+				font-size: 2rem;
+				margin: 0.5rem 0;
+			}
+			p {
+				padding-right: 4rem;
+			}
+		}
+		.sign-up {
+			margin-left: 4rem;
+			display: flex;
+			flex: 1;
+			flex-direction: column;
+			max-width: 100%;
+			input {
+				padding: 0.8rem 0.4rem;
+				margin: 1rem 0;
+				width: 80%;
+				border: 0.5px solid $light-gray;
+				transition: all 0.2s;
+				border-radius: 5px;
+				&:focus {
+					outline: 0;
+					border: 1px solid $bright-blue;
+				}
+			}
+			small {
+				color: $light-blue;
+				margin: 0.5rem 0;
+				letter-spacing: 0.5px;
+			}
+			button {
+				width: 50%;
+			}
+		}
+	}
+}
+//Footer
+.main-footer {
+	.container {
+		margin-top: 2rem;
+	}
+	background: $very-dark-blue;
+	color: $light-blue;
+	padding: 2rem 0;
+	a {
+		color: $light-blue;
+		transition: all 0.2s;
+		&:hover {
+			color: $bright-blue;
+		}
+	}
+	.footer-content {
+		a,
+		span,
+		i {
+			opacity: 0.8;
+		}
+		justify-content: space-between;
+		align-items: baseline;
+		.contact {
+			margin: 1rem 0;
+			&-phone {
+				margin: 0.5rem 0;
+				img {
+					margin-right: 0.6rem;
+				}
+			}
+			&-email {
+				img {
+					margin-right: 0.6rem;
+				}
+			}
+		}
+		.menu {
+			display: block;
+
+			li {
+				margin: 1rem 0;
+			}
+		}
+		.social {
+			margin-right: 10rem;
+			display: flex;
+			.fab {
+				margin: 0 0.5rem;
+				padding: 0.5rem;
+				border-radius: 50%;
+				border: 1px solid $light-blue;
+				cursor: pointer;
+				transition: all 0.2s;
+				&:hover {
+					border: 1px solid $bright-blue;
+					color: $bright-blue;
+				}
+			}
+		}
+	}
+}
+@import 'media';
