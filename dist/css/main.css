@@ -421,6 +421,8 @@ h3 {
         .main-footer .footer-content .social .fab:hover {
           border: 1px solid #3065f8;
           color: #3065f8; }
+  .main-footer .attribution a {
+    margin: 0; }
 
 @media (max-width: 500px) {
   .container {
