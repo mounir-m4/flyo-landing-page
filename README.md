@@ -26,7 +26,7 @@ Users should be able to:
 - See hover states for all interactive elements on the page
   
 ### Links
-- Live Site URL: [https://flyo-landing-page-main.netlify.app]()
+- Live Site URL: https://flyo-landing-page-main.netlify.app/
 
 ### Screenshot
 
